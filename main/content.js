@@ -132,7 +132,7 @@ function playSadSongVideo() {
     return;
   }
 
-  const videoFilesSad = ["main/c1.mp4","main/c2.mp4"];
+  const videoFilesSad = ["main/c1.mp4","main/c2.mp4","main/c3.mp4"];
   const randomVideo = videoFilesSad[Math.floor(Math.random() * videoFilesSad.length)];
   
   try {
