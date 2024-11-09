@@ -1,29 +1,29 @@
 {
  "manifest_version": 3,
- "name": "LeetBeats-2",
+ "name": "LeetBeats",
  "version": "1.0",
  "description": "Extension for LeetCode",
  "permissions": ["tabs"],
  "background": {
-  "service_worker": "background.js"
+  "service_worker": "main/background.js"
 },
  "host_permissions": [
   "https://leetcode.com/*"
 ],
  "content_scripts": [
    {
-     "matches": ["https://leetcode.com/problems/*"],
-     "js": ["canvas-confetti.js","confetti.js", "content.js"],
-     "css":["styles.css"]
+     "matches": ["https://leetcode.com/*"],
+     "js": ["main/canvas-confetti.js", "main/confetti.js", "main/content.js"],
+     "css": ["main/styles.css"]
    }
  ],
  "web_accessible_resources": [
     {
-      "resources": ["v1.mp4", "v2.mp4", "v3.mp4", "v4.mp4"],
+      "resources": ["main/v1.mp4", "main/v2.mp4", "main/v3.mp4", "main/v4.mp4", "main/c1.mp4", "main/c2.mp4"],
       "matches": ["https://*/*"]
     }
   ],
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "main/popup.html"
   }
 }

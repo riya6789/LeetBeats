@@ -17,3 +17,23 @@
     right: 10px;
   }
 }
+
+#leetcode-sad-video {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 300px; 
+  height: auto; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  display: none;  
+}
+
+@media (max-width: 768px) {
+  #leetcode-sad-video {
+    width: 200px; 
+    top: 10px;
+    right: 10px;
+  }
+}
